@@ -1,0 +1,14 @@
+{
+	"commands": [
+		{
+			"name": "Backend",
+			"command": "sh ./test.sh",
+			"stderr": "./logs/error/backend.log"
+		},
+		{
+			"name": "Frontend",
+			"command": "tail -f /var/log/*.log",
+			"stderr": "./logs/error/frontend.log"
+		}
+	]
+}
